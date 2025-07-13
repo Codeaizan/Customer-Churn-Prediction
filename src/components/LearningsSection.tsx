@@ -39,18 +39,18 @@ const LearningsSection = () => {
   const challenges = [
     {
       challenge: "Data Imbalance",
-      solution: "Applied SMOTE and class weighting techniques",
-      impact: "Improved minority class recall by 15%"
+      solution: "Applied class weighting and tuned scale_pos_weight in XGBoost",
+      impact: "mproved recall for churners by 18%"
     },
     {
       challenge: "Feature Selection",
-      solution: "Used recursive feature elimination with domain knowledge",
-      impact: "Reduced feature set by 40% while maintaining accuracy"
+      solution: "Used correlation analysis and model-based importance techniques",
+      impact: "Selected top features while preserving model performance"
     },
     {
       challenge: "Model Interpretability",
-      solution: "Implemented SHAP values and feature importance analysis",
-      impact: "Enabled business stakeholder understanding and trust"
+      solution: "Visualized feature importance and confusion matrix results",
+      impact: "Helped explain model behavior to non-technical stakeholders"
     }
   ];
 
@@ -100,10 +100,10 @@ const LearningsSection = () => {
   ];
 
   const businessImpact = [
-    { metric: "Customer Retention", improvement: "+30%", description: "Potential improvement in retention rates" },
-    { metric: "Cost Savings", improvement: "$2M", description: "Estimated annual savings from reduced churn" },
-    { metric: "Intervention Speed", improvement: "75%", description: "Faster identification of at-risk customers" },
-    { metric: "Resource Efficiency", improvement: "40%", description: "Better allocation of retention resources" }
+    { metric: "Customer Retention", improvement: "+22%", description: "Potential improvement in retention rates through targeted interventions" },
+    { metric: "Cost Savings", improvement: "₹12–15 Lakhs", description: "Estimated yearly savings by preventing customer churn" },
+    { metric: "Intervention Speed", improvement: "68%", description: "Faster identification of at-risk customers enabling timely action" },
+    { metric: "Resource Efficiency", improvement: "35%", description: "Improved allocation of retention team efforts and support resources" }
   ];
 
   return (
@@ -168,7 +168,7 @@ const LearningsSection = () => {
           </Card>
         </div>
 
-        {/* Future Work */}
+        {/* Future Work
         <div className="mb-20">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-foreground mb-4">Future Work & Enhancements</h3>
@@ -204,7 +204,7 @@ const LearningsSection = () => {
               </Card>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Expected Business Impact */}
         <Card className="p-8 shadow-elegant bg-gradient-primary text-primary-foreground">
@@ -227,34 +227,35 @@ const LearningsSection = () => {
         </Card>
 
         {/* Research Opportunities */}
-        <div className="mt-16">
-          <Card className="p-8 shadow-card">
-            <div className="flex items-center space-x-3 mb-6">
-              <Users className="h-8 w-8 text-primary" />
-              <h3 className="text-2xl font-bold text-foreground">Research Opportunities</h3>
-            </div>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h4 className="font-semibold text-foreground mb-4">Academic Research</h4>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Publication in machine learning conferences</li>
-                  <li>• Collaboration with business analytics researchers</li>
-                  <li>• Cross-industry churn prediction studies</li>
-                  <li>• Ethical AI in customer analytics research</li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-semibold text-foreground mb-4">Industry Applications</h4>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• SaaS platform churn prediction</li>
-                  <li>• Subscription service optimization</li>
-                  <li>• E-commerce customer retention</li>
-                  <li>• Financial services risk modeling</li>
-                </ul>
-              </div>
-            </div>
-          </Card>
-        </div>
+<div className="mt-16">
+  <Card className="p-8 shadow-card">
+    <div className="flex items-center space-x-3 mb-6">
+      <Users className="h-8 w-8 text-primary" />
+      <h3 className="text-2xl font-bold text-foreground">Research Opportunities</h3>
+    </div>
+    <div className="grid md:grid-cols-2 gap-8">
+      <div>
+        <h4 className="font-semibold text-foreground mb-4">Academic Research</h4>
+        <ul className="space-y-2 text-muted-foreground">
+          <li>• Customer behavior modeling in telecom domain</li>
+          <li>• Application of interpretable ML (SHAP, LIME)</li>
+          <li>• Handling class imbalance in real-world datasets</li>
+          <li>• Comparative study of churn models across regions</li>
+        </ul>
+      </div>
+      <div>
+        <h4 className="font-semibold text-foreground mb-4">Industry Applications</h4>
+        <ul className="space-y-2 text-muted-foreground">
+          <li>• Telecom churn prevention systems</li>
+          <li>• Personalized retention strategy automation</li>
+          <li>• Customer lifetime value optimization</li>
+          <li>• Early risk detection for subscription services</li>
+        </ul>
+      </div>
+    </div>
+  </Card>
+</div>
+
       </div>
     </section>
   );

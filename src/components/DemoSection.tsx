@@ -8,32 +8,32 @@ const DemoSection = () => {
     {
       customerType: "High-Risk Customer",
       features: {
-        tenure: "3 months",
-        monthlyCharges: "$89.50",
-        totalCharges: "$268.50",
+        tenure: "2 months",
+        monthlyCharges: "₹78.25",
+        totalCharges: "₹156.50",
         contractType: "Month-to-month",
         paymentMethod: "Electronic check",
         internetService: "Fiber optic",
-        supportCalls: "5 calls"
+        supportCalls: "4 calls"
       },
-      prediction: "85%",
+      prediction: "76%",
       riskLevel: "High",
-      recommendation: "Immediate retention offer recommended"
+      recommendation: "Offer immediate discount or personalized retention incentive (e.g., loyalty reward, better plan)"
     },
     {
       customerType: "Low-Risk Customer",
       features: {
-        tenure: "48 months",
-        monthlyCharges: "$65.20",
-        totalCharges: "$3,129.60",
+        tenure: "36 months",
+        monthlyCharges: "₹62.00",
+        totalCharges: "₹2,232.00",
         contractType: "Two year",
         paymentMethod: "Credit card",
         internetService: "DSL",
-        supportCalls: "1 call"
+        supportCalls: "0 calls"
       },
-      prediction: "12%",
+      prediction: "9%",
       riskLevel: "Low",
-      recommendation: "Continue standard service"
+      recommendation: "Continue standard service; no intervention needed at this time"
     }
   ];
 
@@ -54,32 +54,43 @@ const DemoSection = () => {
           {/* App Preview */}
           <Card className="p-8 shadow-elegant mb-12">
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Live Application Demo</h3>
-              <p className="text-muted-foreground mb-6">
-                Try our interactive churn prediction tool with real-time results
-              </p>
-              <div className="flex justify-center space-x-4 mb-6">
-                <Button variant="gradient" size="lg" className="flex items-center space-x-2">
-                  <ExternalLink className="h-5 w-5" />
-                  <span>Launch Demo App</span>
-                </Button>
-                <Button variant="outline" size="lg" className="flex items-center space-x-2">
-                  <Code className="h-5 w-5" />
-                  <span>View Source Code</span>
-                </Button>
-              </div>
-            </div>
+  <h3 className="text-2xl font-bold text-foreground mb-4">Live Application Demo</h3>
+  <p className="text-muted-foreground mb-6">
+    Try our interactive churn prediction tool with real-time results
+  </p>
+  <div className="flex justify-center space-x-4 mb-6">
+    <Button
+      variant="gradient"
+      size="lg"
+      className="flex items-center space-x-2"
+      onClick={() => window.open("https://customer-churn-prediction-fai.streamlit.app/", "_blank")}
+    >
+      <ExternalLink className="h-5 w-5" />
+      <span>Launch Demo App</span>
+    </Button>
+    <Button
+      variant="outline"
+      size="lg"
+      className="flex items-center space-x-2"
+      onClick={() => window.open("https://github.com/Codeaizan/Customer-Churn-Prediction", "_blank")}
+    >
+      <Code className="h-5 w-5" />
+      <span>View Source Code</span>
+    </Button>
+  </div>
+</div>
+
 
             {/* App Screenshot Placeholder */}
             <div className="bg-muted/30 rounded-lg border-2 border-dashed border-primary/20 p-8 min-h-[400px] flex items-center justify-center">
               <div className="text-center text-muted-foreground/50">
-                <Monitor className="h-20 w-20 mx-auto mb-4" />
-                <div className="text-xl mb-2">Streamlit App Screenshot</div>
-                <div className="text-sm">Add your application screenshot here</div>
-                <div className="mt-4 text-xs max-w-md mx-auto">
-                  Include screenshots showing the input form, prediction results, 
-                  and visualizations from your Streamlit application
-                </div>
+                {/* <Monitor className="h-20 w-20 mx-auto mb-4" /> */}
+                {/* <div className="text-xl mb-2">Streamlit App Screenshot</div> */}
+                <img
+                  src="/assets/img6.png"
+                  alt="Streamlit App Screenshot"
+                  className="max-w-full max-h-[500px] object-contain rounded"
+                />
               </div>
             </div>
           </Card>
@@ -170,22 +181,29 @@ const DemoSection = () => {
 
           {/* Interactive Demo Section */}
           <Card className="p-8 shadow-card bg-gradient-primary text-primary-foreground">
-            <div className="text-center">
-              <h3 className="text-2xl font-bold mb-4">Try Your Own Predictions</h3>
-              <p className="text-lg opacity-90 mb-6 max-w-2xl mx-auto">
-                Input your own customer data into our model and see real-time churn predictions 
-                with detailed explanations and business recommendations.
-              </p>
-              <Button 
-                variant="secondary" 
-                size="lg" 
-                className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
-              >
-                Launch Interactive Demo
-                <ExternalLink className="ml-2 h-5 w-5" />
-              </Button>
-            </div>
-          </Card>
+  <div className="text-center">
+    <h3 className="text-2xl font-bold mb-4">Try Your Own Predictions</h3>
+    <p className="text-lg opacity-90 mb-6 max-w-2xl mx-auto">
+      Input your own customer data into our model and see real-time churn predictions 
+      with detailed explanations and business recommendations.
+    </p>
+    <a 
+      href="https://customer-churn-prediction-fai.streamlit.app/" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <Button 
+        variant="secondary" 
+        size="lg" 
+        className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
+      >
+        Launch Interactive Demo
+        <ExternalLink className="ml-2 h-5 w-5" />
+      </Button>
+    </a>
+  </div>
+</Card>
+
 
           {/* Model Explanation */}
           <div className="mt-16">

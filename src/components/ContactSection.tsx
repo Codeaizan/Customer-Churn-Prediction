@@ -4,38 +4,38 @@ import { Github, Linkedin, Mail, ExternalLink, Award, Users, BookOpen } from "lu
 
 const ContactSection = () => {
   const projectDetails = {
-    author: "[Your Name]",
-    studentId: "[Student ID]",
-    course: "Data Science & Machine Learning",
-    institution: "[Your University/College]",
+    authors: ["Faizanur Rahman,", " Mohammad Hamid Khan,", " Krishabh Raj"],
+    studentIds: ["12323057,", " 12311921,", " 12319489"],
+    course: "AI & ML",
+    institution: "Lovely Professional University",
     department: "Computer Science",
-    semester: "Fall 2024",
-    supervisor: "[Professor Name]"
+    semester: "5",
+    supervisor: "Mahipal"
   };
 
-  const acknowledgments = [
-    {
-      category: "Academic Supervision",
-      people: [
-        { name: "[Professor Name]", role: "Project Supervisor", contribution: "Guidance and methodology review" },
-        { name: "[TA Name]", role: "Teaching Assistant", contribution: "Technical support and code review" }
-      ]
-    },
-    {
-      category: "Data & Resources",
-      people: [
-        { name: "[Dataset Provider]", role: "Data Source", contribution: "Customer dataset provision" },
-        { name: "[Industry Expert]", role: "Domain Expert", contribution: "Business context and validation" }
-      ]
-    },
-    {
-      category: "Technical Support",
-      people: [
-        { name: "[Peer Name]", role: "Study Group Member", contribution: "Algorithm discussion and debugging" },
-        { name: "[Mentor Name]", role: "Industry Mentor", contribution: "Real-world application insights" }
-      ]
-    }
-  ];
+  // const acknowledgments = [
+  //   {
+  //     category: "Academic Supervision",
+  //     people: [
+  //       { name: "[Professor Name]", role: "Project Supervisor", contribution: "Guidance and methodology review" },
+  //       { name: "[TA Name]", role: "Teaching Assistant", contribution: "Technical support and code review" }
+  //     ]
+  //   },
+  //   {
+  //     category: "Data & Resources",
+  //     people: [
+  //       { name: "[Dataset Provider]", role: "Data Source", contribution: "Customer dataset provision" },
+  //       { name: "[Industry Expert]", role: "Domain Expert", contribution: "Business context and validation" }
+  //     ]
+  //   },
+  //   {
+  //     category: "Technical Support",
+  //     people: [
+  //       { name: "[Peer Name]", role: "Study Group Member", contribution: "Algorithm discussion and debugging" },
+  //       { name: "[Mentor Name]", role: "Industry Mentor", contribution: "Real-world application insights" }
+  //     ]
+  //   }
+  // ];
 
   const resources = [
     { title: "GitHub Repository", url: "#", description: "Complete source code and documentation" },
@@ -97,18 +97,34 @@ const ContactSection = () => {
             <div className="space-y-4 mb-8">
               <Button variant="outline" className="w-full justify-start">
                 <Mail className="h-4 w-4 mr-2" />
-                <span>[your.email@university.edu]</span>
+                <span>Faizanrahman51@gmail.com, mhkhan1401003@gmail.com, rajkrishabh89@gmail.com</span>
               </Button>
-              <Button variant="outline" className="w-full justify-start">
-                <Linkedin className="h-4 w-4 mr-2" />
-                <span>LinkedIn Profile</span>
-                <ExternalLink className="h-3 w-3 ml-auto" />
-              </Button>
-              <Button variant="outline" className="w-full justify-start">
-                <Github className="h-4 w-4 mr-2" />
-                <span>GitHub Profile</span>
-                <ExternalLink className="h-3 w-3 ml-auto" />
-              </Button>
+              <a
+  href="https://www.linkedin.com/in/faizanur-rahman-2656bb1aa/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-full"
+>
+  <Button variant="outline" className="w-full justify-start">
+    <Linkedin className="h-4 w-4 mr-2" />
+    <span>LinkedIn Profile</span>
+    <ExternalLink className="h-3 w-3 ml-auto" />
+  </Button>
+</a>
+
+<a
+  href="https://github.com/Codeaizan"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-full"
+>
+  <Button variant="outline" className="w-full justify-start">
+    <Github className="h-4 w-4 mr-2" />
+    <span>GitHub Profile</span>
+    <ExternalLink className="h-3 w-3 ml-auto" />
+  </Button>
+</a>
+
             </div>
 
             <div className="p-4 bg-primary/5 border border-primary/20 rounded-lg">
@@ -121,7 +137,7 @@ const ContactSection = () => {
           </Card>
         </div>
 
-        {/* Acknowledgments */}
+        {/* Acknowledgments
         <div className="mb-16">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-foreground mb-4">Acknowledgments</h3>
@@ -149,7 +165,7 @@ const ContactSection = () => {
               </Card>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Resources & Links */}
         <Card className="p-8 shadow-card bg-gradient-accent">
