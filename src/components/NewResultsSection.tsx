@@ -145,7 +145,7 @@ const ResultsSection = () => {
         </div>
         <div className="bg-muted/3 rounded-lg p-8 min-h-[300px] flex items-center justify-center">
           <img
-            src="/assets/img3.png"
+            src="/img3.png"
             alt="Confusion Matrix"
             className="max-w-full max-h-[500px] object-contain rounded"
           />
@@ -233,7 +233,7 @@ const ResultsSection = () => {
                 <h3 className="text-2xl font-bold text-foreground">ROC Curve Analysis</h3>
               </div>
               <img
-                src="/assets/img4.png"
+                src="/img4.png"
                 alt="ROC Curve Visualization"
                 className="max-w-full max-h-[500px] object-contain rounded"
               />
@@ -292,7 +292,7 @@ const ResultsSection = () => {
             <div className="bg-background/50 rounded-lg p-8 min-h-[300px] flex items-center justify-center">
               <div className="text-center text-muted-foreground/50">
                 <img
-                  src="/assets/img5.png"
+                  src="/img5.png"
                   alt="Precision-Recall Curve"
                   className="max-w-full max-h-[500px] object-contain rounded"
                 />

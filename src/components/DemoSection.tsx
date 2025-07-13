@@ -87,7 +87,7 @@ const DemoSection = () => {
                 {/* <Monitor className="h-20 w-20 mx-auto mb-4" /> */}
                 {/* <div className="text-xl mb-2">Streamlit App Screenshot</div> */}
                 <img
-                  src="/assets/img6.png"
+                  src="/img6.png"
                   alt="Streamlit App Screenshot"
                   className="max-w-full max-h-[500px] object-contain rounded"
                 />

@@ -117,7 +117,7 @@ const HowItWasBuiltSection = () => {
             </h3>
             <div className="bg-background/50 rounded-lg p-8 min-h-[300px] flex items-center justify-center">
               <img 
-                src="/assets/img1.png" // 👈 Replace this path with your image
+                src="/img1.png" // 👈 Replace this path with your image
                 alt="Technology Stack Diagram"
                 className="max-h-[400px] w-auto object-contain rounded-md shadow-md"
                 />
@@ -255,7 +255,7 @@ const HowItWasBuiltSection = () => {
             </h3>
             <div className="bg-background/50 rounded-lg p-8 min-h-[300px] flex items-center justify-center">
               <img
-                src="/assets/img2.png" // 👈 Replace with your correct image path if needed
+                src="/img2.png" // 👈 Replace with your correct image path if needed
                 alt="Feature Importance Chart"
                 className="max-h-[400px] w-auto object-contain rounded-md shadow-lg"
               />
