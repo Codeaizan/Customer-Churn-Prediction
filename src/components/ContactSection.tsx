@@ -38,8 +38,8 @@ const ContactSection = () => {
   // ];
 
   const resources = [
-    { title: "GitHub Repository", url: "#", description: "Complete source code and documentation" },
-    { title: "Dataset Documentation", url: "#", description: "Data dictionary and preprocessing steps" },
+    { title: "GitHub Repository", url: "https://github.com/Codeaizan/Customer-Churn-Prediction", description: "Complete source code and documentation" },
+    { title: "Dataset Documentation", url: "https://github.com/Codeaizan/Customer-Churn-Prediction/blob/main/data/Customer_Churn_Dataset_Documentation.pdf", description: "Data dictionary and preprocessing steps" },
     { title: "Technical Report", url: "#", description: "Detailed methodology and results analysis" },
     { title: "Presentation Slides", url: "#", description: "Project presentation materials" }
   ];
@@ -169,22 +169,29 @@ const ContactSection = () => {
 
         {/* Resources & Links */}
         <Card className="p-8 shadow-card bg-gradient-accent">
-          <div className="flex items-center space-x-3 mb-6">
-            <BookOpen className="h-8 w-8 text-primary" />
-            <h3 className="text-2xl font-bold text-foreground">Project Resources</h3>
-          </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {resources.map((resource, index) => (
-              <div key={index} className="flex items-start space-x-3 p-4 bg-background/50 rounded-lg">
-                <ExternalLink className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                <div>
-                  <h4 className="font-semibold text-foreground">{resource.title}</h4>
-                  <p className="text-sm text-muted-foreground">{resource.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </Card>
+  <div className="flex items-center space-x-3 mb-6">
+    <BookOpen className="h-8 w-8 text-primary" />
+    <h3 className="text-2xl font-bold text-foreground">Project Resources</h3>
+  </div>
+  <div className="grid md:grid-cols-2 gap-6">
+    {resources.map((resource, index) => (
+      <a
+        key={index}
+        href={resource.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-start space-x-3 p-4 bg-background/50 rounded-lg hover:bg-background transition"
+      >
+        <ExternalLink className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+        <div>
+          <h4 className="font-semibold text-foreground">{resource.title}</h4>
+          <p className="text-sm text-muted-foreground">{resource.description}</p>
+        </div>
+      </a>
+    ))}
+  </div>
+</Card>
+
 
         {/* Thank You Message */}
         <div className="text-center mt-16">
