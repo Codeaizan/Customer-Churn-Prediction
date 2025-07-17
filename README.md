@@ -4,6 +4,11 @@ This project focuses on predicting **customer churn** in a telecom subscription-
 
 ---
 
+TO VIEW THE PROJECT
+https://customer-churn-prediction-gamma.vercel.app/
+
+---
+
 ## 🚀 Project Objectives
 
 - Predict if a customer is likely to churn using historical data
