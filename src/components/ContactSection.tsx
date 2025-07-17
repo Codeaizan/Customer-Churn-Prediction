@@ -40,8 +40,8 @@ const ContactSection = () => {
   const resources = [
     { title: "GitHub Repository", url: "https://github.com/Codeaizan/Customer-Churn-Prediction", description: "Complete source code and documentation" },
     { title: "Dataset Documentation", url: "https://github.com/Codeaizan/Customer-Churn-Prediction/blob/main/data/Customer_Churn_Dataset_Documentation.pdf", description: "Data dictionary and preprocessing steps" },
-    { title: "Technical Report", url: "#", description: "Detailed methodology and results analysis" },
-    { title: "Presentation Slides", url: "#", description: "Project presentation materials" }
+    { title: "Technical Report", url: "https://github.com/Codeaizan/Customer-Churn-Prediction/blob/main/data/Customer_Churn_Report_LPU_Format_Detailed.pdf", description: "Detailed methodology and results analysis" },
+    { title: "Presentation Slides", url: "https://github.com/Codeaizan/Customer-Churn-Prediction/blob/main/data/Predicting-Customer-Churn-in-Subscription-Services.pptx", description: "Project presentation materials" }
   ];
 
   return (
