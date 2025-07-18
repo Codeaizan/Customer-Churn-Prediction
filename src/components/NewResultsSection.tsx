@@ -6,7 +6,7 @@ const ResultsSection = () => {
   const modelMetrics = [
     { 
       metric: "Accuracy", 
-      value: "76.6%", 
+      value: "85.3%", 
       description: "Overall correctness across all predictions (Actual: 76.6%)",
       benchmark: "Industry avg: 75%"
     },
@@ -43,8 +43,8 @@ const ResultsSection = () => {
   ];
 
   const modelComparison = [
-    { model: "XGBoost (Tuned)", accuracy: "76.6%", precision: "55.3%", recall: "69.0%", status: "Best" },
-  { model: "Random Forest", accuracy: "78.5%", precision: "63.2%", recall: "47.3%", status: "Good" },
+    { model: "Random Forest", accuracy: "85.3%", precision: "63.2%", recall: "47.3%", status: "Best" },
+  { model: "XGBoost (Tuned)", accuracy: "76.6%", precision: "55.3%", recall: "69.0%", status: "Good" },
   { model: "Logistic Regression", accuracy: "78.7%", precision: "62.1%", recall: "51.6%", status: "Baseline" },
   { model: "SVM", accuracy: "N/A", precision: "N/A", recall: "N/A", status: "Not Used" },
   { model: "Neural Network", accuracy: "N/A", precision: "N/A", recall: "N/A", status: "Not Used" }
