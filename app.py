@@ -5,7 +5,7 @@ import pandas as pd
 import json
 
 # Load model, scaler, and column names
-model = joblib.load("xgboost_churn_model.pkl")
+model = joblib.load("rf_churn_model.pkl")
 scaler = joblib.load("scaler.pkl")
 with open("model_columns.json") as f:
     model_columns = json.load(f)
