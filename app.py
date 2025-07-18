@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import json
 
-# Load model, scaler, and column names
+
 model = joblib.load("rf_churn_model.pkl")
 scaler = joblib.load("scaler.pkl")
 with open("model_columns.json") as f:
@@ -12,7 +12,7 @@ with open("model_columns.json") as f:
 
 st.title("📊 Customer Churn Prediction App")
 
-# --- Sidebar Inputs ---
+
 st.sidebar.header("Enter Customer Details:")
 
 tenure = st.sidebar.slider("Tenure (Months)", 0, 72, 12)
@@ -25,10 +25,10 @@ contract = st.sidebar.selectbox("Contract Type", ["Month-to-month", "One year", 
 payment_method = st.sidebar.selectbox("Payment Method", ["Electronic check", "Mailed check", "Bank transfer", "Credit card"])
 paperless = st.sidebar.selectbox("Paperless Billing?", ["Yes", "No"])
 
-# --- Feature Engineering ---
+
 total_spent = tenure * monthly_charges
 
-# Build input data dict
+
 input_dict = {
     'tenure': tenure,
     'MonthlyCharges': monthly_charges,
@@ -44,27 +44,27 @@ input_dict = {
     'PaymentMethod_Mailed check': 1 if payment_method == "Mailed check" else 0,
 }
 
-# Fill missing columns with 0
+
 for col in model_columns:
     if col not in input_dict:
         input_dict[col] = 0
 
-# Convert to DataFrame
+
 input_df = pd.DataFrame([input_dict])[model_columns]
 
 # Scale input data
 input_scaled = scaler.transform(input_df)
 
-# Make prediction
+
 prediction = model.predict(input_scaled)[0]
 probability = model.predict_proba(input_scaled)[0][1]
 
-# --- Output ---
+
 st.subheader("🔍 Prediction Result:")
 st.write("Churn Prediction:", "**Yes**" if prediction == 1 else "**No**")
 st.write(f"Churn Probability: **{probability * 100:.2f}%**")
 
-# --- Retention Strategy ---
+
 st.subheader("💡 Retention Recommendation:")
 
 if probability > 0.75:
