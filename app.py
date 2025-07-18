@@ -6,6 +6,8 @@ import joblib
 # Load trained model and scaler
 model = joblib.load("xgboost_churn_model.pkl")
 scaler = joblib.load("scaler.pkl")
+with open("model_columns.json") as f:
+    model_columns = json.load(f)
 
 # Retention strategy function
 def retention_suggestion(customer):
