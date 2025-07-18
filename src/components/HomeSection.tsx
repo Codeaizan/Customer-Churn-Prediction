@@ -26,14 +26,14 @@ const HomeSection = () => {
               A Machine Learning Approach to Predicting Customer Retention
             </p>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A machine learning project to predict which telecom customers are likely to cancel their subscription (churn), using real-world data and XGBoost modeling.
+              A machine learning project to predict which telecom customers are likely to cancel their subscription (churn), using real-world data and Random Forest Classifier.
             </p>
           </div>
 
           {/* Key Stats */}
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             <Card className="p-6 shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
-              <div className="text-3xl font-bold text-primary mb-2">76.6%</div>
+              <div className="text-3xl font-bold text-primary mb-2">85.3%</div>
               <p className="text-muted-foreground">Model Accuracy</p>
             </Card>
             
