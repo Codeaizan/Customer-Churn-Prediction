@@ -54,10 +54,6 @@ The dataset is based on a **telecom customer churn** problem. Key features inclu
 - Handled missing values in `TotalCharges`
 - Label Encoding for binary columns
 - One-Hot Encoding for multi-category features
-- Feature scaling using **StandardScaler**
-- Class imbalance handled using:
-  - **SMOTE (Synthetic Minority Over-sampling Technique)**
-  - **Class Weighting**
 
 ---
 
@@ -77,8 +73,6 @@ We trained and evaluated the following models:
 | ✅ Random Forest     | 85.3%    | 82.7%     | 88.1%  | 85.3%    | 0.834 |
 | XGBoost             | 84.1%    | 81.2%     | 86.9%  | 83.9%    | 0.826 |
 | Logistic Regression | 78.5%    | 75.3%     | 82.1%  | 78.5%    | 0.790 |
-| SVM                 | 76.2%    | 73.8%     | 79.6%  | 76.6%    | 0.771 |
-| Neural Network      | 83.7%    | 80.9%     | 85.4%  | 83.1%    | 0.821 |
 
 > ✅ **Random Forest** was selected as the final model.
 
