@@ -13,19 +13,19 @@ const HowItWasBuiltSection = () => {
     {
       category: "ML Libraries",
       icon: Brain,
-      items: ["Scikit-learn", "XGBoost", "Pandas", "NumPy"],
+      items: ["XGBoost", "Pandas", "NumPy"],
       description: "Machine learning and data manipulation tools"
     },
     {
       category: "Visualization",
       icon: BarChart3,
-      items: ["Matplotlib", "Streamlit"],
+      items: ["Streamlit"],
       description: "Data visualization and reporting"
     },
     {
       category: "Development Tools",
       icon: Cog,
-      items: ["Google Colab", "VS Code", "Jupyter Notebook", "VS Streamlit", "Python", "Joblib"],
+      items: ["Google Colab", "VS Code", "Jupyter Notebook", "VS Streamlit", "Python"],
       description: "Development environment and version control"
     }
   ];
