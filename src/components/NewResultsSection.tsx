@@ -46,8 +46,6 @@ const ResultsSection = () => {
     { model: "Random Forest", accuracy: "85.3%", precision: "63.2%", recall: "47.3%", status: "Best" },
   { model: "XGBoost (Tuned)", accuracy: "76.6%", precision: "55.3%", recall: "69.0%", status: "Good" },
   { model: "Logistic Regression", accuracy: "78.7%", precision: "62.1%", recall: "51.6%", status: "Baseline" },
-  { model: "SVM", accuracy: "N/A", precision: "N/A", recall: "N/A", status: "Not Used" },
-  { model: "Neural Network", accuracy: "N/A", precision: "N/A", recall: "N/A", status: "Not Used" }
   ];
 
   return (
