@@ -141,8 +141,7 @@ Example 2:
 
 ## 👨‍💻 Contributors
 
-- **Faizanur Rahman**  
-- **Mohammad Hamid Khan**  
+- **Faizanur Rahman**    
 - **Krishabh Raj**
 
 ---
