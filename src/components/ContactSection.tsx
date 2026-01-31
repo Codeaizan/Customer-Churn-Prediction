@@ -5,7 +5,7 @@ import { Github, Linkedin, Mail, ExternalLink, Award, Users, BookOpen } from "lu
 const ContactSection = () => {
   const projectDetails = {
     authors: ["Faizanur Rahman", " Krishabh Raj"],
-    studentIds: ["12323057,", " 12311921,", " 12319489"],
+    studentIds: ["12323057 ", "12319489"],
     course: "AI & ML",
     institution: "Lovely Professional University",
     department: "Computer Science",
