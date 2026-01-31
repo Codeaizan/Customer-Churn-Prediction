@@ -4,7 +4,7 @@ import { Github, Linkedin, Mail, ExternalLink, Award, Users, BookOpen } from "lu
 
 const ContactSection = () => {
   const projectDetails = {
-    authors: ["Faizanur Rahman,", " Mohammad Hamid Khan,", " Krishabh Raj"],
+    authors: ["Faizanur Rahman", " Krishabh Raj"],
     studentIds: ["12323057,", " 12311921,", " 12319489"],
     course: "AI & ML",
     institution: "Lovely Professional University",
@@ -97,7 +97,7 @@ const ContactSection = () => {
             <div className="space-y-4 mb-8">
               <Button variant="outline" className="w-full justify-start">
                 <Mail className="h-4 w-4 mr-2" />
-                <span>Faizanrahman51@gmail.com, mhkhan1401003@gmail.com, rajkrishabh89@gmail.com</span>
+                <span>Faizanrahman51@gmail.com, rajkrishabh89@gmail.com</span>
               </Button>
               <a
   href="https://www.linkedin.com/in/faizanur-rahman-2656bb1aa/"
